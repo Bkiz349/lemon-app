@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from './components/Nav';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Hero from './components/Hero';
+
 
 
 function App() {
@@ -11,7 +13,8 @@ function App() {
         <HashRouter>
            <Nav />
            <Routes>
-              {/* <Route path="/" component={}> </Route> */}
+              <Route path="/" element={<Hero />}> </Route>
+            
            </Routes>
        </HashRouter>
     </>

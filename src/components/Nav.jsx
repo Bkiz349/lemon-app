@@ -1,11 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from '../Assets/littlelemonicon-white.png'
+
+
+   const logo_style  = {
+   width: "150px",
+   height: "50px",
+   // marginRight: "10px"
+}
 
 const Nav = () => {
-   return (<nav className="navbar navbar-expand-md bg-light">
+
+
+   return (<nav className="navbar navbar-expand-md">
       <div className="container">
          <Link to="/" className="navbar-brand">
-            LITTLE LEMON
+            <img src={logo} alt="Little lemon icon" style={logo_style} />
          </Link>
          <button className="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbar-menu" >
