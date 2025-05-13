@@ -17,7 +17,8 @@ const Header = () => {
       <div className="container">
          <div className="row ">
             <div className="col-md-4 offset-md-1  p-4">
-               <h2 className='text-warning'>Little Lemon <h4 className='text-white'>Chicago</h4></h2>
+               <h2 className='text-warning m-0'>Little Lemon </h2>
+               <h4 className='text-white'>Chicago</h4> 
                <p>We are a family owned Mediterraneon restaurant, focused on traditional recipes served with a modern twist</p>
                <Link to='/reservations' className="btn btn-warning rounded">Reserve a table</Link>
             </div>
