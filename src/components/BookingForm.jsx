@@ -7,7 +7,7 @@ const BookingForm = (props) => {
    const [guests, setGuests] = useState(1);
    const [occasion, setOccasion] = useState("Birthday");
 
-   const availableTimes = props.availableTimes || []
+   const availableTimes = props.availableTimes || [] ;
 
 
    const handleSubmit = (e) => {
@@ -15,12 +15,11 @@ const BookingForm = (props) => {
       console.log({ date, time, guests, occasion });
    };
 
-   const handleDateChange = (e) => { 
+   const handleDateChange = (e) => {
       const selectedDate = e.target.value;
       setDate(selectedDate);
-
-      props.dispatch({type: "UPDATE_TIMES", payload: selectedDate});
-   }
+      props.onDateChange(new Date(selectedDate)); 
+    };
 
 
    return (
